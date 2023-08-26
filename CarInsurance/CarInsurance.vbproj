@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AB2D226-2712-4D4D-A62C-88F8BCC6D919}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CarInsurance.My.MyApplication</StartupObject>
+    <RootNamespace>CarInsurance</RootNamespace>
+    <AssemblyName>CarInsurance</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CarInsurance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CarInsurance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Flash.2">
+      <HintPath>E:\dll\C1.C1Flash.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Data.2">
+      <HintPath>E:\dll\C1.Data.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.2">
+      <HintPath>E:\dll\C1.Win.C1Command.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.2">
+      <HintPath>E:\dll\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic.2">
+      <HintPath>E:\dll\C1.Win.C1FlexGrid.Classic.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.2">
+      <HintPath>E:\dll\C1.Win.C1Input.2.dll</HintPath>
+    </Reference>
+    <Reference Include="FnOfGRD">
+      <HintPath>E:\dll\FnOfGRD.dll</HintPath>
+    </Reference>
+    <Reference Include="FunClassLib">
+      <HintPath>E:\dll\FunClassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carsearching.Designer.vb">
+      <DependentUpon>carsearching.vb</DependentUpon>
+    </Compile>
+    <Compile Include="carsearching.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Image.Designer.vb">
+      <DependentUpon>Image.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Image.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelMaster.Designer.vb">
+      <DependentUpon>ModelMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModelMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Color.Designer.vb">
+      <DependentUpon>Color.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Color.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTOMaster.Designer.vb">
+      <DependentUpon>RTOMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RTOMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Associate.Designer.vb">
+      <DependentUpon>Select_Associate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Associate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make_BrandMaster.Designer.vb">
+      <DependentUpon>Make_BrandMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Make_BrandMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Version_Master .Designer.vb">
+      <DependentUpon>Version_Master .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Version_Master .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make_yearMaster.Designer.vb">
+      <DependentUpon>Make_yearMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Make_yearMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fuel_VarientMaster.Designer.vb">
+      <DependentUpon>Fuel_VarientMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fuel_VarientMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carsearching.resx">
+      <DependentUpon>carsearching.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image.resx">
+      <DependentUpon>Image.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelMaster.resx">
+      <DependentUpon>ModelMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Color.resx">
+      <DependentUpon>Color.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTOMaster.resx">
+      <DependentUpon>RTOMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Associate.resx">
+      <DependentUpon>Select_Associate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make_BrandMaster.resx">
+      <DependentUpon>Make_BrandMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Version_Master .resx">
+      <DependentUpon>Version_Master .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make_yearMaster.resx">
+      <DependentUpon>Make_yearMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuel_VarientMaster.resx">
+      <DependentUpon>Fuel_VarientMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
